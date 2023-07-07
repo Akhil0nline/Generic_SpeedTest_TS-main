@@ -47,6 +47,7 @@ When('user click on Update call list button', async function () {
 });
 
 Then('call list should be updated successfully', async function () {
+    await fixture.page.waitForTimeout(3000);
     await CallListPage.UpdateCallListII();
     await CallListPage.CallListIISuccess();
 
