@@ -3,9 +3,5 @@ node_modules/
 /playwright-report/
 /playwright/.cache/
 /test-result/
-/test-results/
-cucumber-report.html
-assets
-features
 @rerun.txt
-index.html
+
