@@ -19,8 +19,8 @@ async function emailSend(error) {
             text: error,
             attachments: [
                 {
-                    filename: 'index.html',
-                    path: '../..test-results/reports/index.html',
+                    filename: 'cucumber-report.html',
+                    path: 'test-results/cucumber-report.html',
                 },
             ],
         };
