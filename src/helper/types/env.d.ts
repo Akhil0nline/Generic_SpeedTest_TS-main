@@ -1,3 +1,5 @@
+import { ViewportSize } from "@playwright/test";
+
 export { };
 
 declare global {

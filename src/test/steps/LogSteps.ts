@@ -27,8 +27,6 @@ Then('as a user enter the password', async function () {
 });
 
 
-
-
 Then('as a user click on the login button', async function () {
     await CallListPage.clickLoginButton();
 
@@ -49,14 +47,11 @@ Then('user click on Activity Log feature', async function () {
 });
 
 
-
-
 Then('apply date search for Activity logs', async function () {
 
     await ActivityLogPage.FilterDates();
 
 });
-
 
 
 Then('logs should be displayed as per the valid dates', async function () {
