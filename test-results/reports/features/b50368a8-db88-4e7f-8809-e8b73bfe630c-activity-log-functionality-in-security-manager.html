@@ -734,18 +734,23 @@ input#darkCheck:checked ~ label>svg#moon {
                 
                     
                     
+                        <i class="fa fa-tag fa-lg"></i>
+                        
+                            <span class="tag">@ActivityLog_Sanity</span>
+                        
+                    
                 
             </div>
             <h1>Feature:
-                <small>Update call lists in security manager</small>
+                <small>Activity log functionality in security manager</small>
             </h1>
             
                 <p>
                <p><strong>File name:</strong>
-                    UpdateCallList.feature
+                    ActivityLog.feature
                 </p>
                 <p><strong>Relative path:</strong>
-                    features/UpdateCallList.feature</p>
+                    features/ActivityLog.feature</p>
             
         </div>
 
@@ -931,10 +936,15 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                         
                         
+                            <i class="fa fa-tag fa-lg"></i>
+                            
+                                <span class="tag">@ActivityLog_Sanity</span>
+                            
+                        
                     
                 </div>
 
-                <h2>Scenario Outline: <small>Security manager - Call List update functionality</small></h2>
+                <h2>Scenario Outline: <small>Verify the Activity log date search in secuity manager</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -947,7 +957,7 @@ input#darkCheck:checked ~ label>svg#moon {
 
                     
                         <li>
-                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">6</span>
+                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">7</span>
                         </li>
                     
 
@@ -987,7 +997,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        User navigates to the application
+                                        as a user navigates to the application
                                         
                                     
 
@@ -1033,12 +1043,12 @@ navigating to "https://securitytest.interfacesys.com/Account/Login.aspx", waitin
     at C:\Users\akhil.krishnan\PlaywrightRepo\Playwright_Cucumber_TS-main\src\pages\CallListPage.ts:8:71
     at __awaiter (C:\Users\akhil.krishnan\PlaywrightRepo\Playwright_Cucumber_TS-main\src\pages\CallListPage.ts:4:12)
     at CallListPage.navigateToLoginPage (C:\Users\akhil.krishnan\PlaywrightRepo\Playwright_Cucumber_TS-main\src\pages\CallListPage.ts:65:16)
-    at World.(anonymous) (C:\Users\akhil.krishnan\PlaywrightRepo\Playwright_Cucumber_TS-main\src\test\steps\CallListSteps.ts:77:55)
-    at step (C:\Users\akhil.krishnan\PlaywrightRepo\Playwright_Cucumber_TS-main\src\test\steps\CallListSteps.ts:56:23)
-    at Object.next (C:\Users\akhil.krishnan\PlaywrightRepo\Playwright_Cucumber_TS-main\src\test\steps\CallListSteps.ts:37:53)
-    at C:\Users\akhil.krishnan\PlaywrightRepo\Playwright_Cucumber_TS-main\src\test\steps\CallListSteps.ts:31:71
-    at __awaiter (C:\Users\akhil.krishnan\PlaywrightRepo\Playwright_Cucumber_TS-main\src\test\steps\CallListSteps.ts:27:12)
-    at World.(anonymous) (C:\Users\akhil.krishnan\PlaywrightRepo\Playwright_Cucumber_TS-main\src\test\steps\CallListSteps.ts:72:12)</pre>
+    at World.(anonymous) (C:\Users\akhil.krishnan\PlaywrightRepo\Playwright_Cucumber_TS-main\src\test\steps\LogSteps.ts:79:55)
+    at step (C:\Users\akhil.krishnan\PlaywrightRepo\Playwright_Cucumber_TS-main\src\test\steps\LogSteps.ts:56:23)
+    at Object.next (C:\Users\akhil.krishnan\PlaywrightRepo\Playwright_Cucumber_TS-main\src\test\steps\LogSteps.ts:37:53)
+    at C:\Users\akhil.krishnan\PlaywrightRepo\Playwright_Cucumber_TS-main\src\test\steps\LogSteps.ts:31:71
+    at __awaiter (C:\Users\akhil.krishnan\PlaywrightRepo\Playwright_Cucumber_TS-main\src\test\steps\LogSteps.ts:27:12)
+    at World.(anonymous) (C:\Users\akhil.krishnan\PlaywrightRepo\Playwright_Cucumber_TS-main\src\test\steps\LogSteps.ts:73:12)</pre>
                                 </div>
                             
 
@@ -1074,7 +1084,7 @@ navigating to "https://securitytest.interfacesys.com/Account/Login.aspx", waitin
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        User enter the username
+                                        as a user enter the username
                                         
                                     
 
@@ -1134,7 +1144,7 @@ navigating to "https://securitytest.interfacesys.com/Account/Login.aspx", waitin
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        User enter the password
+                                        as a user enter the password
                                         
                                     
 
@@ -1194,7 +1204,7 @@ navigating to "https://securitytest.interfacesys.com/Account/Login.aspx", waitin
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        User click on the login button
+                                        as a user click on the login button
                                         
                                     
 
@@ -1254,7 +1264,7 @@ navigating to "https://securitytest.interfacesys.com/Account/Login.aspx", waitin
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        user search for test panel
+                                        as a user search for test panel
                                         
                                     
 
@@ -1314,7 +1324,7 @@ navigating to "https://securitytest.interfacesys.com/Account/Login.aspx", waitin
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        user click on Update call list button
+                                        user click on Activity Log feature
                                         
                                     
 
@@ -1374,7 +1384,67 @@ navigating to "https://securitytest.interfacesys.com/Account/Login.aspx", waitin
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        call list should be updated successfully
+                                        apply date search for Activity logs
+                                        
+                                    
+
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+                            
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        logs should be displayed as per the valid dates
                                         
                                     
 

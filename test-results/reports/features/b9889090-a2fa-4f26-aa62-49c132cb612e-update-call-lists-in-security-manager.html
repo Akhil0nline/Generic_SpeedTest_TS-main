@@ -734,23 +734,18 @@ input#darkCheck:checked ~ label>svg#moon {
                 
                     
                     
-                        <i class="fa fa-tag fa-lg"></i>
-                        
-                            <span class="tag">@ActivityLog_Sanity</span>
-                        
-                    
                 
             </div>
             <h1>Feature:
-                <small>Activity log functionality in security manager</small>
+                <small>Update call lists in security manager</small>
             </h1>
             
                 <p>
                <p><strong>File name:</strong>
-                    ActivityLog.feature
+                    UpdateCallList.feature
                 </p>
                 <p><strong>Relative path:</strong>
-                    features/ActivityLog.feature</p>
+                    features/UpdateCallList.feature</p>
             
         </div>
 
@@ -936,15 +931,10 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                         
                         
-                            <i class="fa fa-tag fa-lg"></i>
-                            
-                                <span class="tag">@ActivityLog_Sanity</span>
-                            
-                        
                     
                 </div>
 
-                <h2>Scenario Outline: <small>Verify the Activity log date search in secuity manager</small></h2>
+                <h2>Scenario Outline: <small>Security manager - Call List update functionality</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -987,8 +977,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step failed">
-                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
+                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
                                         </div>
                                     
                                 
@@ -997,7 +987,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        as a user navigates to the application
+                                        User navigates to the application
                                         
                                     
 
@@ -1008,8 +998,6 @@ input#darkCheck:checked ~ label>svg#moon {
                                 
                                     
 
-                                    
-                                        <a href="#error0-1-error" data-toggle="collapse">+ Show Error</a>
                                     
 
                                     
@@ -1025,14 +1013,6 @@ input#darkCheck:checked ~ label>svg#moon {
                             </div>
 
                         
-                            
-                                <div id="error0-1-error" class="scenario-step-collapse collapse">
-                                    <pre class=info>locator._expect: Target page, context or browser has been closed
-    at CallListPage.(anonymous) (C:\Users\akhil.krishnan\PlaywrightRepo\Playwright_Cucumber_TS-main\src\pages\CallListPage.ts:83:76)
-    at step (C:\Users\akhil.krishnan\PlaywrightRepo\Playwright_Cucumber_TS-main\src\pages\CallListPage.ts:33:23)
-    at Object.next (C:\Users\akhil.krishnan\PlaywrightRepo\Playwright_Cucumber_TS-main\src\pages\CallListPage.ts:14:53)
-    at fulfilled (C:\Users\akhil.krishnan\PlaywrightRepo\Playwright_Cucumber_TS-main\src\pages\CallListPage.ts:5:58)</pre>
-                                </div>
                             
 
                             
@@ -1067,7 +1047,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        as a user enter the username
+                                        User enter the username
                                         
                                     
 
@@ -1127,7 +1107,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        as a user enter the password
+                                        User enter the password
                                         
                                     
 
@@ -1187,7 +1167,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        as a user click on the login button
+                                        User click on the login button
                                         
                                     
 
@@ -1247,7 +1227,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        as a user search for test panel
+                                        user search for test panel
                                         
                                     
 
@@ -1307,7 +1287,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        user click on Activity Log feature
+                                        user click on Update call list button
                                         
                                     
 
@@ -1367,67 +1347,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        apply date search for Activity logs
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">And </span>
-
-                                    
-                                        logs should be displayed as per the valid dates
+                                        call list should be updated successfully
                                         
                                     
 
