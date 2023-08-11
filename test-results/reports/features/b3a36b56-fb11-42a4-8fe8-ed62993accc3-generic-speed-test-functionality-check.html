@@ -734,18 +734,23 @@ input#darkCheck:checked ~ label>svg#moon {
                 
                     
                     
+                        <i class="fa fa-tag fa-lg"></i>
+                        
+                            <span class="tag">@Mandatory_Field</span>
+                        
+                    
                 
             </div>
             <h1>Feature:
-                <small>Update call lists in security manager</small>
+                <small>Generic speed test functionality check</small>
             </h1>
             
                 <p>
                <p><strong>File name:</strong>
-                    UpdateCallList.feature
+                    SpeedTest.feature
                 </p>
                 <p><strong>Relative path:</strong>
-                    features/UpdateCallList.feature</p>
+                    features/SpeedTest.feature</p>
             
         </div>
 
@@ -931,10 +936,15 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                         
                         
+                            <i class="fa fa-tag fa-lg"></i>
+                            
+                                <span class="tag">@Mandatory_Field</span>
+                            
+                        
                     
                 </div>
 
-                <h2>Scenario Outline: <small>Security manager - Call List update functionality</small></h2>
+                <h2>Scenario Outline: <small>Verify the Validation message for speed test form page</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -946,10 +956,6 @@ input#darkCheck:checked ~ label>svg#moon {
                     
 
                     
-                        <li>
-                            <span class="step skipped-background" data-toggle="tooltip" title="Scenario is skipped">7</span>
-                        </li>
-                    
 
                     
                         <li>
@@ -957,6 +963,10 @@ input#darkCheck:checked ~ label>svg#moon {
                         </li>
                     
 
+                    
+                        <li>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
+                        </li>
                     
 
                     
@@ -977,8 +987,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -987,7 +997,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        User navigates to the application
+                                        user navigates to the generic speed test site
                                         
                                     
 
@@ -1037,8 +1047,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1047,7 +1057,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        User enter the username
+                                        user click on captach check box and other field should be blank
                                         
                                     
 
@@ -1097,8 +1107,8 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -1107,7 +1117,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        User enter the password
+                                        user click on GO button
                                         
                                     
 
@@ -1157,17 +1167,17 @@ input#darkCheck:checked ~ label>svg#moon {
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
+                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step failed">
+                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
                                         </div>
                                     
                                 
 
                                 <div class="text">
-                                    <span class="keyword highlight">Then </span>
+                                    <span class="keyword highlight">When </span>
 
                                     
-                                        User click on the login button
+                                        validation message should be displayed to user
                                         
                                     
 
@@ -1178,6 +1188,8 @@ input#darkCheck:checked ~ label>svg#moon {
                                 
                                     
 
+                                    
+                                        <a href="#error0-4-error" data-toggle="collapse">+ Show Error</a>
                                     
 
                                     
@@ -1194,185 +1206,26 @@ input#darkCheck:checked ~ label>svg#moon {
 
                         
                             
+                                <div id="error0-4-error" class="scenario-step-collapse collapse">
+                                    <pre class=info>Error: Timed out 5000ms waiting for expect(received).toBeVisible()
+Call log:
+  - locator._expect with timeout 5000ms
+  - waiting for locator('xpath=//label[text()=\'Please input the required fields.\']')
 
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Then </span>
-
-                                    
-                                        user search for test panel
-                                        
-                                    
-
-                                    
-
+    at Proxy.(anonymous) (C:\Users\akhil.krishnan\PlaywrightRepo\Generic_SpeedTest_TS-main\node_modules\@playwright\test\lib\matchers\expect.js:165:37)
+    at SpeedTestHomePage.(anonymous) (C:\Users\akhil.krishnan\PlaywrightRepo\Generic_SpeedTest_TS-main\src\pages\SpeedHomePage.ts:122:72)
+    at step (C:\Users\akhil.krishnan\PlaywrightRepo\Generic_SpeedTest_TS-main\src\pages\SpeedHomePage.ts:33:23)
+    at Object.next (C:\Users\akhil.krishnan\PlaywrightRepo\Generic_SpeedTest_TS-main\src\pages\SpeedHomePage.ts:14:53)
+    at C:\Users\akhil.krishnan\PlaywrightRepo\Generic_SpeedTest_TS-main\src\pages\SpeedHomePage.ts:8:71
+    at __awaiter (C:\Users\akhil.krishnan\PlaywrightRepo\Generic_SpeedTest_TS-main\src\pages\SpeedHomePage.ts:4:12)
+    at SpeedTestHomePage.ValidationMessage (C:\Users\akhil.krishnan\PlaywrightRepo\Generic_SpeedTest_TS-main\src\pages\SpeedHomePage.ts:116:16)
+    at World.(anonymous) (C:\Users\akhil.krishnan\PlaywrightRepo\Generic_SpeedTest_TS-main\src\test\steps\SpeedTestStep.ts:87:60)
+    at step (C:\Users\akhil.krishnan\PlaywrightRepo\Generic_SpeedTest_TS-main\src\test\steps\SpeedTestStep.ts:33:23)
+    at Object.next (C:\Users\akhil.krishnan\PlaywrightRepo\Generic_SpeedTest_TS-main\src\test\steps\SpeedTestStep.ts:14:53)
+    at C:\Users\akhil.krishnan\PlaywrightRepo\Generic_SpeedTest_TS-main\src\test\steps\SpeedTestStep.ts:8:71
+    at __awaiter (C:\Users\akhil.krishnan\PlaywrightRepo\Generic_SpeedTest_TS-main\src\test\steps\SpeedTestStep.ts:4:12)
+    at World.(anonymous) (C:\Users\akhil.krishnan\PlaywrightRepo\Generic_SpeedTest_TS-main\src\test\steps\SpeedTestStep.ts:84:12)</pre>
                                 </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">And </span>
-
-                                    
-                                        user click on Update call list button
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step is skipped">
-                                            <i class="fa fa-arrow-circle-right fa-2x skipped-color"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Then </span>
-
-                                    
-                                        call list should be updated successfully
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
                             
 
                             

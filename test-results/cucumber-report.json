@@ -4,122 +4,70 @@
     "elements": [
       {
         "description": "",
-        "id": "activity-log-functionality-in-security-manager;verify-the-activity-log-date-search-in-secuity-manager",
+        "id": "generic-speed-test-functionality-check;verify-the-validation-message-for-speed-test-form-page",
         "keyword": "Scenario Outline",
         "line": 4,
-        "name": "Verify the Activity log date search in secuity manager",
+        "name": "Verify the Validation message for speed test form page",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 10174066200
+              "duration": 346026999
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "as a user navigates to the application",
+            "name": "user navigates to the generic speed test site",
             "match": {
-              "location": "src\\test\\steps\\LogSteps.ts:72"
+              "location": "src\\test\\steps\\SpeedTestStep.ts:47"
             },
             "result": {
-              "status": "failed",
-              "duration": 5898138099,
-              "error_message": "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://securitytest.interfacesys.com/Account/Login.aspx\", waiting until \"domcontentloaded\"\n============================================================\n    at PlaywrightWrapper.<anonymous> (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\helper\\wrapper\\PlaywrightWrappers.ts:47:60)\n    at step (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\helper\\wrapper\\PlaywrightWrappers.ts:33:23)\n    at Object.next (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\helper\\wrapper\\PlaywrightWrappers.ts:14:53)\n    at C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\helper\\wrapper\\PlaywrightWrappers.ts:8:71\n    at __awaiter (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\helper\\wrapper\\PlaywrightWrappers.ts:4:12)\n    at PlaywrightWrapper.goto (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\helper\\wrapper\\PlaywrightWrappers.ts:44:16)\n    at CallListPage.<anonymous> (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\pages\\CallListPage.ts:69:60)\n    at step (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\pages\\CallListPage.ts:33:23)\n    at Object.next (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\pages\\CallListPage.ts:14:53)\n    at C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\pages\\CallListPage.ts:8:71\n    at __awaiter (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\pages\\CallListPage.ts:4:12)\n    at CallListPage.navigateToLoginPage (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\pages\\CallListPage.ts:65:16)\n    at World.<anonymous> (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\test\\steps\\LogSteps.ts:79:55)\n    at step (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\test\\steps\\LogSteps.ts:56:23)\n    at Object.next (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\test\\steps\\LogSteps.ts:37:53)\n    at C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\test\\steps\\LogSteps.ts:31:71\n    at __awaiter (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\test\\steps\\LogSteps.ts:27:12)\n    at World.<anonymous> (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\test\\steps\\LogSteps.ts:73:12)"
+              "status": "passed",
+              "duration": 8254025399
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "as a user enter the username",
+            "name": "user click on captach check box and other field should be blank",
             "match": {
-              "location": "src\\test\\steps\\LogSteps.ts:87"
+              "location": "src\\test\\steps\\SpeedTestStep.ts:61"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 170000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "as a user enter the password",
+            "name": "user click on GO button",
             "match": {
-              "location": "src\\test\\steps\\LogSteps.ts:99"
+              "location": "src\\test\\steps\\SpeedTestStep.ts:73"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 108700
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "When ",
             "line": 8,
-            "name": "as a user click on the login button",
+            "name": "validation message should be displayed to user",
             "match": {
-              "location": "src\\test\\steps\\LogSteps.ts:111"
+              "location": "src\\test\\steps\\SpeedTestStep.ts:83"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "as a user search for test panel",
-            "match": {
-              "location": "src\\test\\steps\\LogSteps.ts:123"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "user click on Activity Log feature",
-            "match": {
-              "location": "src\\test\\steps\\LogSteps.ts:143"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 11,
-            "name": "apply date search for Activity logs",
-            "match": {
-              "location": "src\\test\\steps\\LogSteps.ts:158"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "logs should be displayed as per the valid dates",
-            "match": {
-              "location": "src\\test\\steps\\LogSteps.ts:170"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 5004396900,
+              "error_message": "Error: Timed out 5000ms waiting for expect(received).toBeVisible()\nCall log:\n  - locator._expect with timeout 5000ms\n  - waiting for locator('xpath=//label[text()=\\'Please input the required fields.\\']')\n\n    at Proxy.<anonymous> (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Generic_SpeedTest_TS-main\\node_modules\\@playwright\\test\\lib\\matchers\\expect.js:165:37)\n    at SpeedTestHomePage.<anonymous> (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Generic_SpeedTest_TS-main\\src\\pages\\SpeedHomePage.ts:122:72)\n    at step (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Generic_SpeedTest_TS-main\\src\\pages\\SpeedHomePage.ts:33:23)\n    at Object.next (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Generic_SpeedTest_TS-main\\src\\pages\\SpeedHomePage.ts:14:53)\n    at C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Generic_SpeedTest_TS-main\\src\\pages\\SpeedHomePage.ts:8:71\n    at __awaiter (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Generic_SpeedTest_TS-main\\src\\pages\\SpeedHomePage.ts:4:12)\n    at SpeedTestHomePage.ValidationMessage (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Generic_SpeedTest_TS-main\\src\\pages\\SpeedHomePage.ts:116:16)\n    at World.<anonymous> (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Generic_SpeedTest_TS-main\\src\\test\\steps\\SpeedTestStep.ts:87:60)\n    at step (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Generic_SpeedTest_TS-main\\src\\test\\steps\\SpeedTestStep.ts:33:23)\n    at Object.next (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Generic_SpeedTest_TS-main\\src\\test\\steps\\SpeedTestStep.ts:14:53)\n    at C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Generic_SpeedTest_TS-main\\src\\test\\steps\\SpeedTestStep.ts:8:71\n    at __awaiter (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Generic_SpeedTest_TS-main\\src\\test\\steps\\SpeedTestStep.ts:4:12)\n    at World.<anonymous> (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Generic_SpeedTest_TS-main\\src\\test\\steps\\SpeedTestStep.ts:84:12)"
             }
           },
           {
@@ -127,156 +75,25 @@
             "hidden": true,
             "result": {
               "status": "failed",
-              "duration": 1889571899,
-              "error_message": "page.screenshot: Target page, context or browser has been closed\n    at World.<anonymous> (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\hooks\\hooks.ts:146:69)\n    at step (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\hooks\\hooks.ts:33:23)\n    at Object.next (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\hooks\\hooks.ts:14:53)\n    at fulfilled (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\hooks\\hooks.ts:5:58)"
+              "duration": 67418799,
+              "error_message": "page.screenshot: Target page, context or browser has been closed\n    at World.<anonymous> (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Generic_SpeedTest_TS-main\\src\\hooks\\hooks.ts:146:69)\n    at step (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Generic_SpeedTest_TS-main\\src\\hooks\\hooks.ts:33:23)\n    at Object.next (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Generic_SpeedTest_TS-main\\src\\hooks\\hooks.ts:14:53)\n    at fulfilled (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Generic_SpeedTest_TS-main\\src\\hooks\\hooks.ts:5:58)"
             }
           }
         ],
         "tags": [
           {
-            "name": "@ActivityLog_Sanity",
+            "name": "@Mandatory_Field",
             "line": 3
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "activity-log-functionality-in-security-manager",
+    "id": "generic-speed-test-functionality-check",
     "line": 1,
     "keyword": "Feature",
-    "name": "Activity log functionality in security manager",
+    "name": "Generic speed test functionality check",
     "tags": [],
-    "uri": "src\\test\\features\\ActivityLog.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "update-call-lists-in-security-manager;security-manager---call-list-update-functionality",
-        "keyword": "Scenario Outline",
-        "line": 3,
-        "name": "Security manager - Call List update functionality",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 2162214100,
-              "error_message": "browserContext.newPage: Target closed\n    at World.<anonymous> (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\hooks\\hooks.ts:78:50)\n    at step (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\hooks\\hooks.ts:33:23)\n    at Object.next (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\hooks\\hooks.ts:14:53)\n    at fulfilled (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\hooks\\hooks.ts:5:58)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "User navigates to the application",
-            "match": {
-              "location": "src\\test\\steps\\CallListSteps.ts:71"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "User enter the username",
-            "match": {
-              "location": "src\\test\\steps\\CallListSteps.ts:85"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 6,
-            "name": "User enter the password",
-            "match": {
-              "location": "src\\test\\steps\\CallListSteps.ts:97"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "User click on the login button",
-            "match": {
-              "location": "src\\test\\steps\\CallListSteps.ts:107"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "user search for test panel",
-            "match": {
-              "location": "src\\test\\steps\\CallListSteps.ts:119"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "user click on Update call list button",
-            "match": {
-              "location": "src\\test\\steps\\CallListSteps.ts:139"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "call list should be updated successfully",
-            "match": {
-              "location": "src\\test\\steps\\CallListSteps.ts:154"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "failed",
-              "duration": 20717799,
-              "error_message": "page.screenshot: Target page, context or browser has been closed\n    at World.<anonymous> (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\hooks\\hooks.ts:146:69)\n    at step (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\hooks\\hooks.ts:33:23)\n    at Object.next (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\hooks\\hooks.ts:14:53)\n    at fulfilled (C:\\Users\\akhil.krishnan\\PlaywrightRepo\\Playwright_Cucumber_TS-main\\src\\hooks\\hooks.ts:5:58)"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "update-call-lists-in-security-manager",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Update call lists in security manager",
-    "tags": [],
-    "uri": "src\\test\\features\\UpdateCallList.feature"
+    "uri": "src\\test\\features\\SpeedTest.feature"
   }
 ]
