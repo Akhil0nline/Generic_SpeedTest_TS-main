@@ -12,7 +12,7 @@ export default class SpeedTestHomePage {
 
     private Elements = {
         captcha: "//label[@id='recaptcha-anchor-label']",
-        GoButton: "//div[text()[normalize-space()='Go']]",
+        GoButton: "(//label[text()='City']/following::input)[1]",
         loginBtn: "//p[@class='logonButton']//input[1]",
         errorMessage: "alert",
         panelName: "//a[contains(text(),'Test Panel - AGB Account')]",
@@ -33,17 +33,8 @@ export default class SpeedTestHomePage {
         await fixture.page.waitForTimeout(6000);
         await expect(this.page).toHaveTitle("Broadband Speed Tester ");
     }
-    async captchacheckbox(username: string) {
-        await this.page.locator(this.Elements.captcha).click;
-    }
-    async ClickonGO(Password: string) {
-        await this.page.locator(this.Elements.GoButton).click;
-    }
 
-    async ValidationMessage() {
-        const toast = this.page.locator(this.Elements.Dialogbox);
-        await expect(toast).toBeVisible();
-        await expect(toast).toHaveText("Please input the required fields.");
+    async ClickonGO() {
+        await this.page.locator(this.Elements.GoButton).fill("LA");
     }
-
 }

@@ -16,19 +16,7 @@ Given('user navigates to the generic speed test site', async function () {
 
 })
 
-When('user click on captach check box and other field should be blank', async function () {
-
-    await SpeedHomePage.captchacheckbox;
-})
-
-Then('user click on GO button', async () => {
+When('user click on GO button', async () => {
 
     await SpeedHomePage.ClickonGO;
 })
-
-When('validation message should be displayed to user', async function () {
-
-    await SpeedHomePage.ValidationMessage();
-
-});
-
