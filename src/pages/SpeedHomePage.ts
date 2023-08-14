@@ -11,7 +11,7 @@ export default class SpeedTestHomePage {
     }
 
     private Elements = {
-        captcha: "//label[@id='recaptcha-anchor-label']",
+        captcha: "//html[contains(@class,'js flexbox')]//body[1]",
         GoButton: "//div[text()[normalize-space()='Go']]",
         loginBtn: "//p[@class='logonButton']//input[1]",
         errorMessage: "alert",
@@ -35,6 +35,7 @@ export default class SpeedTestHomePage {
     async ClickonGO() {
         await fixture.page.waitForTimeout(6000);
         await this.page.click(this.Elements.GoButton);
+
 
     }
 
