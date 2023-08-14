@@ -12,7 +12,7 @@ export default class SpeedTestHomePage {
 
     private Elements = {
         captcha: "//label[@id='recaptcha-anchor-label']",
-        GoButton: "(//label[text()='City']/following::input)[1]",
+        GoButton: "//div[text()[normalize-space()='Go']]",
         loginBtn: "//p[@class='logonButton']//input[1]",
         errorMessage: "alert",
         panelName: "//a[contains(text(),'Test Panel - AGB Account')]",
@@ -28,13 +28,24 @@ export default class SpeedTestHomePage {
 
     async navigateToSite() {
         await this.base.goto(process.env.BASEURL);
-        console.log(await this.page.viewportSize().width)
-        console.log(await this.page.viewportSize().height)
         await fixture.page.waitForTimeout(6000);
         await expect(this.page).toHaveTitle("Broadband Speed Tester ");
     }
 
     async ClickonGO() {
-        await this.page.locator(this.Elements.GoButton).fill("LA");
+        await fixture.page.waitForTimeout(6000);
+        await this.page.click(this.Elements.GoButton);
+
+    }
+
+    async ValidationMessage() {
+
+        await fixture.page.waitForTimeout(6000);
+        const toast = this.page.locator(this.Elements.Dialogbox);
+        await expect(toast).toBeVisible();
+        await expect(toast).toHaveText("Please input the required fields.");
+        await fixture.page.waitForTimeout(6000);
+
+
     }
 }

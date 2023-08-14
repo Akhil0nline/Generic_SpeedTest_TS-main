@@ -4,3 +4,4 @@ Feature: Generic speed test functionality check
   Scenario Outline: Verify the Validation message for speed test form page
     Given user navigates to the generic speed test site
     When user click on GO button
+    Then Validation message should displayed to user

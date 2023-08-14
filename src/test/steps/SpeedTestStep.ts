@@ -18,5 +18,12 @@ Given('user navigates to the generic speed test site', async function () {
 
 When('user click on GO button', async () => {
 
-    await SpeedHomePage.ClickonGO;
+    await SpeedHomePage.ClickonGO();
+
+})
+
+Then('Validation message should displayed to user', async () => {
+
+    await SpeedHomePage.ValidationMessage();
+
 })
