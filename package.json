@@ -29,6 +29,7 @@
     "winston": "^3.8.2"
   },
   "dependencies": {
+    "2captcha": "^3.0.7",
     "nodemailer": "^6.9.3",
     "viewport": "^2.0.1"
   }
