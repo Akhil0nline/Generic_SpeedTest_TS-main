@@ -47,6 +47,5 @@ export default class SpeedTestHomePage {
         await expect(toast).toHaveText("Please input the required fields.");
         await fixture.page.waitForTimeout(6000);
 
-
     }
 }
