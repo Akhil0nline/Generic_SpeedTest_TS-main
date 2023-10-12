@@ -1,6 +1,7 @@
 import { LaunchOptions, chromium, firefox, webkit } from "playwright-core";
 
 const options: LaunchOptions = {
+    args: ["--start-maximized"],
     headless: !true
 }
 export const invokeBrowser = () => {
